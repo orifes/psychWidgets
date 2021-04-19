@@ -19,7 +19,7 @@ For each video, there are 3 variables stored:
 If you are sampling every 500 milliseconds (the default), in an ideal world, the vector of time values will be e.g. 0, 500, 1000, 1500... But in practice, individual computers will have some lag/latency, and so having a vector of these time values will allow you to interpolate the valence values, and compare ratings across different participants.
 
 
-At a high level, I use Qualtrics' "embedded data", which can be anything (a single number, a string). In this case, I use the embedded data to store a vector. So the slider-values variable will be "['50', '55', '57', '57'...]". where the numbers represent the value of the slider.
+At a high level, I use Qualtrics' "embedded data", which can be anything (a single number, a string). In this case, I use the embedded data to store a vector. So the slider-values variable will be "['50', '55', '57', '57'...]". where the numbers represent the value of the slider. _Each array must be converted into a string before storing it as "embedded data"._
 
 
 Default values:
